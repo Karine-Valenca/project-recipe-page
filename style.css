@@ -25,8 +25,9 @@ main {
     border: 10px;
     background-color: white;
     max-width: 600px;
+    min-width: 300px;
     margin: 80px auto 80px auto;
-    padding: 20px;
+    padding: 25px;
 }
 h1 {
     font-family:"Young Serif";
@@ -46,7 +47,6 @@ h2 {
     font-family: "Outfit";
     padding: 25px;
     border-radius: 8px;
-
 }
 #h2dif {
     padding-bottom: 15px;
@@ -59,11 +59,10 @@ h2 {
     box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.096)
 }
 img {
-    border-radius: 15px;
-    padding: 20px 23px 20px 20px;
-    max-width: 600px;
-    justify-content: center;
-    
+    border-radius: 25px;
+    padding: 10px 10px 10px 0px;
+    width: 100%;
+    justify-content: center;  
 }
 p {
     padding-top:10px ;
@@ -71,9 +70,13 @@ p {
 }
 li {
     padding: 5px;
+    color: black;
+}
+li::marker {
+    color:hsl(14, 45%, 36%);
 }
 table {
-    width: 600px;
+    width: 100%;
 }
 tr {  
     box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.096)
@@ -86,5 +89,19 @@ th {
 td {
     color: hsl(14, 45%, 36%);
     font-weight: bold;
+}
+@media(max-width:600px) {
+    main {
+        margin:0px;
+        padding: 0px 0px 0px 0px;  
+    }
+    img {
+        border-radius: 0px; 
+        padding-top: 0px; 
+        padding-right: 0px;
+    }
+    div {
+        padding-left: 20px;
+    }
 }
   
